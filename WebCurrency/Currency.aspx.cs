@@ -17,17 +17,30 @@ namespace WebCurrency
         Rate M;
         Rate Y;
 
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Init(object sender, EventArgs e)
         {
             ddl();
-            getRate();
             ddlCurrency.SelectedIndexChanged += DdlCurrency_SelectedIndexChanged;
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //ddl();
+            getRate();
+            
             
         }
 
         private void DdlCurrency_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            tbxlMonthMinDate.Text = string.Empty;
+            tbxlMonthMinRate.Text = string.Empty;
+            tbxTodayDate.Text = string.Empty;
+            tbxTodayRate.Text = string.Empty;
+            tbxHalfYearMinDate.Text = string.Empty;
+            tbxHalfYearMinRate.Text = string.Empty;
+            getRate();
+
         }
 
         void ddl()
@@ -71,8 +84,8 @@ namespace WebCurrency
             
             Y = new Rate("HalfYear", ddlCurrency.SelectedItem.Text);
             Y.getRate();
-            lblHalfYearMinRate.Text = Y.RateMin.ToString(); ;
-            lblHalfYearMinDate.Text = Y.DateMin;
+            tbxHalfYearMinRate.Text = Y.RateMin.ToString(); ;
+            tbxHalfYearMinDate.Text = Y.DateMin;
 
 
 

@@ -13,6 +13,15 @@ namespace WebCurrency {
     public partial class Currency {
         
         /// <summary>
+        /// form1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
         /// ddlCurrency 控制項。
         /// </summary>
         /// <remarks>
@@ -94,21 +103,21 @@ namespace WebCurrency {
         protected global::System.Web.UI.WebControls.Label lblHalfYearMin;
         
         /// <summary>
-        /// lblHalfYearMinRate 控制項。
+        /// tbxHalfYearMinRate 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lblHalfYearMinRate;
+        protected global::System.Web.UI.WebControls.TextBox tbxHalfYearMinRate;
         
         /// <summary>
-        /// lblHalfYearMinDate 控制項。
+        /// tbxHalfYearMinDate 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lblHalfYearMinDate;
+        protected global::System.Web.UI.WebControls.TextBox tbxHalfYearMinDate;
     }
 }
